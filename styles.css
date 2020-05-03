@@ -1,10 +1,119 @@
 :root {
-    --cyan: hsl(179, 62%, 43%);
-    --yellow-green: hsl(71, 73%, 54%);
-    --lt-gray: hsl(204, 43%, 93%);
-    --gray: hsl(218, 22%, 67%);
+  --cyan: hsl(179, 62%, 43%);
+  --turquoise: rgba(71, 189, 187, 0.863);
+  --yellow-green: hsl(71, 73%, 54%);
+  --lt-gray: hsl(204, 43%, 93%);
+  --gray: hsl(218, 22%, 67%);
 }
 
-.thinner {
-    font-weight: lighter;
+body {
+  font-family: "Karla", "sans-serif";
+  background-color: var(--lt-gray);
 }
+
+.container {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 10%;
+}
+
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--cyan);
+}
+
+.colorPop {
+    color: var(--yellow-green);
+}
+
+.grayTxt {
+    color: var(--gray);
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.community {
+    padding: 45px;
+    background-color: rgba(255, 255, 255, 0.788);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.price {
+    background-color: var(--cyan);
+    color: var(--lt-gray);
+    padding: 45px;
+    border-bottom-left-radius: 10px;
+}
+
+.money {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.whyUs {
+    color: var(--lt-gray);
+    background-color: var(--turquoise);
+    padding: 45px;
+    border-bottom-right-radius: 10px;
+}
+
+ul {
+    font-size: 0.9rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    background-color: var(--yellow-green);
+    color: var(--lt-gray);
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 760px) {
+    .container {
+        width: 80%;
+    }
+
+    .price {
+        border-bottom-left-radius: 0;
+    }
+
+    .whyUs {
+        border-bottom-left-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 70%;
+    }
+
+    .price {
+        border-bottom-left-radius: 10px;
+    }
+
+    .whyUs {
+        border-bottom-left-radius: 0px;
+    }
+}
+
