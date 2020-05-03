@@ -1,0 +1,10 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --yellow-green: hsl(71, 73%, 54%);
+    --lt-gray: hsl(204, 43%, 93%);
+    --gray: hsl(218, 22%, 67%);
+}
+
+.thinner {
+    font-weight: lighter;
+}
